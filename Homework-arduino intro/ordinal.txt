@@ -1,0 +1,39 @@
+int number = 1;
+int n;
+char suf[5] = {'st', 'nd', 'rd', 'th'};
+void setup()
+{
+for ( int n=0; n<3; n++) {
+  
+  Serial.println(number);
+  Serial.print(suf[n]);
+  (number++);
+ }
+  
+ for ( int i=4; i<=20; i++) {
+  
+  Serial.println(number);
+  Serial.print(suf[3]);
+ } 
+  for (int a=2; a<=9; a++) {
+    
+  for ( int n=0; n<3; n++) {
+  
+  Serial.println(number);
+  Serial.print(suf[n]);
+  (number++);
+  }
+  
+ int factor = n + 6;
+    for ( int n = n; n <= factor; n++){
+    Serial.println(number);
+    Serial.print(suf[n]);
+      (n--);
+    }
+  }
+}
+
+
+void loop()
+{
+}

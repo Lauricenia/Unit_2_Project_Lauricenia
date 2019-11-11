@@ -1,0 +1,18 @@
+int numb; 
+int array[8] = { 0, 1, 2, 3, 4, 5, 6 };
+
+void setup() {
+  Serial.begin(9600);
+     
+  for ( int i = 0; i < 101; i++ ) {
+    
+    Serial.println(array[numb]);
+    (numb++);
+    if ( numb = 7 ) {
+      numb = 0;
+    }
+  }
+}
+
+void loop() {
+}
