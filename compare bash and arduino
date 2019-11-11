@@ -1,0 +1,12 @@
+
+https://www.arduino.cc/en/guide/introduction
+http://comparecamp.com/arduino-ide-review-pricing-pros-cons-features/
+
+Arduino:                                 | Bash:
+-allows you to connect to a hardware and |- limited to being a software
+ program it                              |         
+- not sensitive to spaces                |-syntax unforgiving 
+-a lot of resources on internet          |-less resources on internet
+-editing tools IDE; (cut,do,undo..)      |-editing tools are limited 
+-more mathematical functions             | -mathematical function are limited
+-easier to browse between sketches(scripts)| -harder to browse through scripts
