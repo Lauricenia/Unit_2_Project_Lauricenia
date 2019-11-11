@@ -1,0 +1,27 @@
+int numb = 0;
+int n;
+int i;
+int a;
+void setup()
+{
+  Serial.begin(9600);
+  
+  for (int i = 2; i <= 100; i++) {
+    for (int n = 2; n <= i; n++) {
+      int a = i % n;
+      if ( a == 0) {
+        numb = 1;
+      }
+      if ( numb == 0 ) {
+        Serial.println(i);
+      }
+    }
+ }
+delay(1000); 
+}
+
+  
+void loop()
+{
+ 
+}
