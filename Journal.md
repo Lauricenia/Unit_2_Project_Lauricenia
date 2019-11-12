@@ -14,4 +14,4 @@ ans: it's a variable used only in function declarations that indicates that the 
 function from which it was called. (https://www.arduino.cc/reference/tr/language/variables/data-types/void).
 1. What are the types of variables?
 ![Diagram](typesofvariables.png) 
-[The figure above shows the types of variable in arduino programming language]
+[The figure above shows the types of variable in arduino programming language][source:https://www.youtube.com/watch?v=xmZXWMEltEc&t=271s]
