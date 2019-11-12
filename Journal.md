@@ -11,7 +11,7 @@ Reflection (1st day) -
 #### Homework:
 1. What is the meaning of void?
 ans: it's a variable used only in function declarations that indicates that the function is expected to return no information to the 
-function from which it was called. (https://www.arduino.cc/reference/tr/language/variables/data-types/void).
+function from which it was called. (source: https://www.arduino.cc/reference/tr/language/variables/data-types/void).
 1. What are the types of variables?
 ![Diagram](typesofvariables.png) 
 [The figure above shows the types of variable in arduino programming language][source:https://www.youtube.com/watch?v=xmZXWMEltEc&t=271s]
