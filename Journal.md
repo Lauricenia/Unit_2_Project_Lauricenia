@@ -29,3 +29,6 @@ Reflection (2nd day)
 
 #### Homework:
 1. Solve the tables again but using binary logic
+
+#### Links found on internet
+http://www0.cs.ucl.ac.uk/teaching/B261/truth_tables.html
