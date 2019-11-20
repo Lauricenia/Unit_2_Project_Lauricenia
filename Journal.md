@@ -16,7 +16,7 @@ function from which it was called. (source: https://www.arduino.cc/reference/tr/
 ![Diagram](typesofvariables.png) 
 [The figure above shows the types of variable in arduino programming language][source:https://www.youtube.com/watch?v=xmZXWMEltEc&t=271s]
 
-Reflection (3rd day)
+Reflection (2nd day)
 --------------------
 ### What did we do today :
 1. Quiz
@@ -31,7 +31,7 @@ Reflection (3rd day)
 ##### Homework:
 1. Weekend task: exercises about binary and conversion from binary to decimal and vice-versa.
 
-Reflection (2nd day)
+Reflection (3rd day)
 -----------------------------
 #### What did we do today:
 1. warm up- converting types of data representations
@@ -50,7 +50,7 @@ Reflection (2nd day)
 http://www0.cs.ucl.ac.uk/teaching/B261/truth_tables.html
 
 
-Reflection (3rd day)
+Reflection (4th day)
 -----------------------------
 #### What did we do today:
 1. Solve a sheet about binary logic
@@ -64,7 +64,7 @@ Reflection (3rd day)
 1. I still need to pratice counting in different bases
 
 
-Reflection (4th day)
+Reflection (5th day)
 -----------------------------
 #### What did we do today:
 1. Solving ib exams type of questions
