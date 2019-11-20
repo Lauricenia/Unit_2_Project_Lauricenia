@@ -35,7 +35,7 @@ Reflection (2nd day)
 http://www0.cs.ucl.ac.uk/teaching/B261/truth_tables.html
 
 
-Reflection (2nd day)
+Reflection (3rd day)
 -----------------------------
 #### What did we do today:
 1. Solve a sheet about binary logic
@@ -49,7 +49,7 @@ Reflection (2nd day)
 1. I still need to pratice counting in different bases
 
 
-Reflection (3rd day)
+Reflection (4th day)
 -----------------------------
 #### What did we do today:
 1. Solving ib exams type of questions
