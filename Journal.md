@@ -16,6 +16,21 @@ function from which it was called. (source: https://www.arduino.cc/reference/tr/
 ![Diagram](typesofvariables.png) 
 [The figure above shows the types of variable in arduino programming language][source:https://www.youtube.com/watch?v=xmZXWMEltEc&t=271s]
 
+Reflection (3rd day)
+--------------------
+### What did we do today :
+1. Quiz
+1. Correction of the quiz
+1. Program to turn on 2 leds by using binary (introduction to binary)
+
+#### WHat did I learn:
+1. Improved my understanding on types of variables
+1. How to count binary
+1. How to turn on leds by using if statement
+
+##### Homework:
+1. Weekend task: exercises about binary and conversion from binary to decimal and vice-versa.
+
 Reflection (2nd day)
 -----------------------------
 #### What did we do today:
