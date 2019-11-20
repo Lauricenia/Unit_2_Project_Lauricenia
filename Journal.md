@@ -24,11 +24,39 @@ Reflection (2nd day)
 1. Binary logic (and, or, xor, not, nand, nor)
 
 #### What did you learn:
-1. The sysmbols of ninary logic
+1. The symbols of binary logic
+1.How to count in different bases
 1. How to use binary logic to find the pattern in a table
 
 #### Homework:
-1. Solve the tables again but using binary logic
+1. Solve the hw tables again but using binary logic
 
 #### Links found on internet
 http://www0.cs.ucl.ac.uk/teaching/B261/truth_tables.html
+
+
+Reflection (2nd day)
+-----------------------------
+#### What did we do today:
+1. Solve a sheet about binary logic
+
+
+#### What did you learn:
+1. Got a better understanding on how to do and interpret logic tables
+
+#### Questions:
+1. I tried doing the tables hw again using boolean but its not working 
+1. I still need to pratice counting in different bases
+
+
+Reflection (3rd day)
+-----------------------------
+#### What did we do today:
+1. Solving ib exams type of questions
+1. warm up activity: do a program that lights up lcds in order to form numbers from 0 to 7 by using a logic table and logic equations.
+
+#### What did you learn:
+1. it was a good practise to improve my undertanding on logic tables
+
+#### Homework:
+1. Finish the program 
