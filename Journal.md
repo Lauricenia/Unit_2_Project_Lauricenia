@@ -75,3 +75,14 @@ Reflection (5th day)
 
 #### Homework:
 1. Finish the program 
+
+
+Reflection (6th day)
+-----------------------------
+#### What did we do today:
+1. Solving IB type of question
+1. Programing
+
+#### What did you learn:
+1. How are questions in IB about logic gates
+
