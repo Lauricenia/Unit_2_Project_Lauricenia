@@ -99,8 +99,8 @@ In software engineering, usability is the degree to which a software can be used
 ```
 1. Human-centered design HCD
 
-``` POSNER I, MARS R. "Its not you, bad doors are everywhere" 2016. Retrieved https://www.youtube.com/watch?v=yY96hTb8WgI
- (25 Nov 2019) 
+```
+POSNER I, MARS R. "Its not you, bad doors are everywhere" 2016. Retrieved https://www.youtube.com/watch?v=yY96hTb8WgI (25 Nov 2019) 
  ```
  
  #### What did you learn:
