@@ -91,7 +91,8 @@ Reflection (7th day) - 25th December
 #### What did we do today:
 1. What is usability?
 
-```In software engineering, usability is the degree to which a software can be used by specified consumers to achieve quantified objectives with effectiveness, efficiency, and satisfaction in a quantified context of use. 
+```
+In software engineering, usability is the degree to which a software can be used by specified consumers to achieve quantified objectives with effectiveness, efficiency, and satisfaction in a quantified context of use. 
 ```
 ```
 [“Usability.” Usability - Computer Science Wiki, computersciencewiki.org/index.php/Usability.]
