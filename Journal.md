@@ -86,7 +86,7 @@ Reflection (6th day)
 #### What did you learn:
 1. How are questions in IB about logic gates
 
-Reflection (7th day) - 25th December
+Reflection (7th day) - 25th November
 -----------------------------
 #### What did we do today:
 1. What is usability?
@@ -102,5 +102,31 @@ In software engineering, usability is the degree to which a software can be used
 ```
 POSNER I, MARS R. "Its not you, bad doors are everywhere" 2016. Retrieved https://www.youtube.com/watch?v=yY96hTb8WgI (25 Nov 2019) 
  ```
+1. Work on elgish input system
+
+ #### What did you learn:
+ 
+ Reflection (8th day) -  2nd December
+ -------------------
+ #### What did we do today:
  
  #### What did you learn:
+  
+  
+  
+ 
+ LINKS
+ ---------
+ 
+ ### Hexadecimal:
+ https://www.electronics-tutorials.ws/binary/bin_3.html
+ https://www.bbc.co.uk/bitesize/guides/zp73wmn/revision/1
+ 
+ ### SAS
+ https://www.nibusinessinfo.co.uk/content/advantages-and-disadvantages-software-service-saas
+ https://www.outsource2india.com/software/articles/software-as-a-service.asp
+ https://www.racemi.com/saas-advantages-and-disadvantages/
+ 
+ 
+ ## past papers
+  https://drive.google.com/drive/folders/1MBiCoji39U1OYV2_ZhNWFF1iDUzjzUtZ
