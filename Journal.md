@@ -109,8 +109,16 @@ POSNER I, MARS R. "Its not you, bad doors are everywhere" 2016. Retrieved https:
  Reflection (8th day) -  2nd December
  -------------------
  #### What did we do today:
+ 1. Computer architecture 
+ 1. Build arduino input system
+
  
  #### What did you learn:
+ 1. Arduino is 8 bit
+ 1. Our computers can store memories that are 64 bits long, when the memory to be stored is more than 64, the computer divides it into different sets and keeps track of it 
+ 1. RAM and flask (search)
+ 1. The computer is a linear machine
+ 
   
   
   
