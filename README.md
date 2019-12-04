@@ -43,7 +43,8 @@ This repository will be used to record the steps for creating the mars communica
  
   Algorithms flow diagram
   ====================
- 
+ ![](flowchart1.jpg)
+ ![](flowchart2.jpg)
   Testplan
   ============
 <p></details>
