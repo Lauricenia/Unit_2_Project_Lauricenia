@@ -40,7 +40,7 @@ This repository will be used to record the steps for creating the mars communica
   
   System diagram
   ==============
- 
+ ![](systemdiagram.jpg)
   Algorithms flow diagram
   ====================
  ![](flowchart1.jpg)
