@@ -33,11 +33,16 @@ This repository will be used to record the steps for creating the mars communica
   
   System diagram
   ==============
+  first draft
+  -------------
  ![](systemdiagram.jpg)
  
   Algorithms flow diagram
   ====================
-  ## Flow chart for the English Input System
+  #### Flow chart for the English Input System
+  
+   First drafts
+   -------------
  ![](flowchart1.jpg)
  ![](flowchart2.jpg)
   Testplan
