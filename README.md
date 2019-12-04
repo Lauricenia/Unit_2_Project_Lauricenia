@@ -15,7 +15,7 @@ This repository will be used to record the steps for creating the mars communica
   
   Proposed solution
   ===================
- Since the Mars station can only communicate using binary and the users must be able to send and recieve messages in english, its necessary to make a system that is able to execute the conversion between these two languages. The system should allow the user to enter the message in english then convert it to binary and send it to other station, in the same way, it should be able to receive the message in binary language and present it to the user in english. The user will be able to input the message by pressing the "OK" button, by which will choose the letter that appears in the serial monitor and the button "ERASE" by which can erase the last letter introduced in the message and by pressing both to insert space between the words. 
+ Since the Mars station can only communicate using binary and the users must be able to send and recieve messages in english, its necessary to make a system that is able to execute the conversion between these two languages. The system should allow the user to enter the message in english then convert it to binary and send it to other station, in the same way, it should be able to receive the message in binary language and present it to the user in english. The user will be able to input the message using two buttons: left button - by which will browse through the options available (alphabet, digits,space,sent, delete) and the right button- by which can choose the option.
 
   Success criteria 
   ====================
@@ -81,6 +81,60 @@ digitalWrite(out7, g );
 
 ```
 In software engineering, usability is the degree to which a software can be used by specified consumers to achieve quantified objectives with effectiveness, efficiency, and satisfaction in a quantified context of use.[2]
+```
+
+## English Input System
+
+```.sh
+String text = "";
+int index = 0; 
+String keyboard[]={"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"," ", "SENT", "DEL"};
+int numOptions = 38;
+
+                   
+void setup()
+{
+  Serial.begin(9600);
+  attachInterrupt(0, changeLetter, RISING);//button A in port 2
+  attachInterrupt(1, selected, RISING);//button B in port 3
+}
+
+
+void loop()
+{
+  Serial.println("Option (Select:butB, Change:butA): " + keyboard[index]);
+  Serial.println("Message: "+ text);
+  delay(100);
+}
+
+//This function changes the letter in the keyboard
+void changeLetter(){
+  index++;
+if (index > numOptions){
+  	index=0; //loop back to first row
+  } 
+}
+
+//this function adds the letter to the text or send the msg
+void selected(){
+String key = keyboard[index];
+
+if ( key == "DEL" )
+{
+int len = text.length();
+text.remove(len - 1);
+}
+  else if ( key  == "SEND" ) 
+{
+Serial.print("Message sent");
+text = "";
+}
+  else 
+  { 
+    text+=key;
+  }
+
+index = 0;
 ```
 
 <p></details>
