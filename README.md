@@ -1,11 +1,4 @@
-Feedback Nov 26 (You can deleted this section later. It will remain in the history of the file)
 
-|No.|How to improve        |
-|-|------------- |
-|①| The first part of your documentation is really good. Noe, try to add evidence of your work in the Development section including pictures, writing, sketches.
-|②|　Keep the Journal just for the reflection after class. All other information you can added to this File.|
-
-----
 
 # Unit_2_Project_Lauricenia
 This repository will be used to record the steps for creating the mars communication system program
@@ -55,7 +48,7 @@ This repository will be used to record the steps for creating the mars communica
  ## 8 lcds
  This program forms numbers from 0 to 1 with the leds using boolean.
  
- ![](8lcds.mov)
+ ![](8 lcds.mov)
  
  ```.sh
  // Number one 
@@ -64,7 +57,7 @@ This repository will be used to record the steps for creating the mars communica
  ```
  
  
- 1. What is usability?
+ ## What is usability?
 
 ```
 In software engineering, usability is the degree to which a software can be used by specified consumers to achieve quantified objectives with effectiveness, efficiency, and satisfaction in a quantified context of use. 
