@@ -60,11 +60,9 @@ This repository will be used to record the steps for creating the mars communica
  ## What is usability?
 
 ```
-In software engineering, usability is the degree to which a software can be used by specified consumers to achieve quantified objectives with effectiveness, efficiency, and satisfaction in a quantified context of use. 
+In software engineering, usability is the degree to which a software can be used by specified consumers to achieve quantified objectives with effectiveness, efficiency, and satisfaction in a quantified context of use.[2]
 ```
-```
-[“Usability.” Usability - Computer Science Wiki, computersciencewiki.org/index.php/Usability.]
-```
+
 <p></details>
    
    
@@ -83,4 +81,5 @@ In software engineering, usability is the degree to which a software can be used
   
  <details><summary>References</summary>
  [1]https://www.nasa.gov/audience/forstudents/5-8/features/nasa-knows/what-is-nasa-58.html  
+ [2]“Usability.” Usability - Computer Science Wiki, computersciencewiki.org/index.php/Usability.
  <p></details> 
