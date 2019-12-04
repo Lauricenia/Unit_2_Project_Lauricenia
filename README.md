@@ -34,8 +34,10 @@ This repository will be used to record the steps for creating the mars communica
   System diagram
   ==============
  ![](systemdiagram.jpg)
+ 
   Algorithms flow diagram
   ====================
+  ## Flow chart for the English Input System
  ![](flowchart1.jpg)
  ![](flowchart2.jpg)
   Testplan
@@ -48,15 +50,30 @@ This repository will be used to record the steps for creating the mars communica
  ## Single led blink program
  ![](blinky.gif)
  
+ 
  ## 8 lcds
- This program forms numbers from 0 to 1 with the leds using boolean logic.
+ -This program forms numbers from 0 to 1 with the leds using boolean logic.
  
  ![](8lcd.gif)
  
  ```.sh
- // Number one 
  bool  a = ( !A & !C ) | B | ( A & C );
- bool digitalWrite(out1, a);
+bool  b = ( !B & !C ) | ( A & !C )  | ( A & !B & C );
+bool  c = ( !A & !C ) | ( B & !C );
+bool  d = ( !A & !C ) | ( !A & B ) | ( B & !C ) | ( A & !B & C );
+bool  e = ( !B & !C ) | ( A & B ) | C ;
+bool  f = (!B & !C) | ( !A & B ) | ( B & C ) | ( !A & !B & C );
+bool  g = ( A & !C ) | ( B & !C ) | ( !A & B ) | ( A & !B & C ) ;
+ 
+  
+digitalWrite(out1, a );
+digitalWrite(out2, b );
+digitalWrite(out3, c );
+digitalWrite(out4, d );
+digitalWrite(out5, e );
+digitalWrite(out6, f );
+digitalWrite(out7, g );
+                     
  ```
  
  
