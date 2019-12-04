@@ -52,10 +52,13 @@ This repository will be used to record the steps for creating the mars communica
  
 <details><summary>Development</summary>
  
+ ## 8 lcds
+ This program forms numbers from 0 to 1 with the leds using boolean.
  
- 
+ ![](8lcds.mov)
  
  ```.sh
+ // Number one 
  bool  a = ( !A & !C ) | B | ( A & C );
  bool digitalWrite(out1, a);
  ```
