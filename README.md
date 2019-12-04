@@ -51,6 +51,16 @@ This repository will be used to record the steps for creating the mars communica
  
  
 <details><summary>Development</summary>
+ 
+ 
+ 
+ 
+ ```.sh
+ bool  a = ( !A & !C ) | B | ( A & C );
+ bool digitalWrite(out1, a);
+ ```
+ 
+ 
  1. What is usability?
 
 ```
