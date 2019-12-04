@@ -135,7 +135,8 @@ remainder = result % 10;
 
 void loop()
 { 
-}               ```
+}               
+```
  
  
  ## What is usability?
@@ -196,6 +197,7 @@ text = "";
   }
 
 index = 0;
+}
 ```
 
 <p></details>
