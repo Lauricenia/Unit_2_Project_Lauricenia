@@ -54,7 +54,30 @@ This repository will be used to record the steps for creating the mars communica
  
  ## Single led blink program
  ![](blinky.gif)
- 
+ ```.sh
+ void setup()
+{
+  //pinMode(pin, mode)
+  
+ /*
+ *This function configures the 13 pin to behave as output
+ *It changes the electrical behaviour of the pin
+ *OUTPUT means the pin can provide a substantial amount of current to other circuits
+ */ 
+ pinMode(13, OUTPUT);
+}
+
+void loop()
+{
+  //digitalWrite(pin, value)
+  //delay(milliseconds)
+  
+  /*
+  *This function sets writes the HIGH value to the 13 pin
+  *HIGH means that its voltage will be set to 5V (the light will light on)
+  */
+ digitalWrite(13, HIGH);
+   ```
  
  ## 8 lcds
  -This program forms numbers from 0 to 1 with the leds using boolean logic.
@@ -80,6 +103,39 @@ digitalWrite(out6, f );
 digitalWrite(out7, g );
                      
  ```
+ ## Convert binary to decimal
+ -This program converts a decimal input by the user into binary representation
+ ```.sh
+ String numb = "";
+int remainder;
+int sum=0;
+int i = 0;
+
+void setup()
+{
+ Serial.begin(9600);
+  Serial.println("You have 5 seconds to put the binary number");
+  delay(5000);
+  while (Serial.available() > 0) {
+    char inChar = Serial.read();
+    numb += inChar;
+  }
+  delay(1000);
+  int result = numb.toInt();
+  while (result > 0) {
+remainder = result % 10;
+    
+   // https://forum.arduino.cc/index.php?topic=2392.0
+  sum = sum + remainder * ( 0.5 + pow(2,i) );
+  result = result / 10;
+    i++;
+  }
+   Serial.println(sum);
+}
+
+void loop()
+{ 
+}               ```
  
  
  ## What is usability?
