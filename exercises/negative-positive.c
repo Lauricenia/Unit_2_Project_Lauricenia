@@ -6,16 +6,16 @@ int main() {
 
   //ask the user for the number
   printf("Enter the number\n");
-  scanf("%d",&number);
+  scanf("%i",&number);
   //if the number is less than 0, it is negative
   if (number < 0)
   {
-    printf("The number is negative");
+    printf("The number is negative\n");
   }
   //if it is more, it is positive
   else
   {
-    printf("The number is positive");
+    printf("The number is positive\n");
   }
   return 0; 
 }
