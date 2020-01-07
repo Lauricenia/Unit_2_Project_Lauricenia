@@ -200,12 +200,30 @@ index = 0;
 }
 ```
 
-<p></details>
 
 PROTOCOL
 ==============
-1. How will the information be transmitted 
-   
+|Protocol's name | created by | Used in |
+|----------------|------------|----------|
+| IP | Vint Cerf & Robert E.Kahn| host or network interface identification and location addressing|
+| FTP| Abhay Bhusan| transfering files between client and server|
+| SSH| Tatu Ylönen| log into a remote machine and execute commands|
+|SMTP| RFC 82l| sending/receiving email|
+|Telnet| UCLA| allows you to connect to remote computers(hosts)|
+|POP3| Mark Crisein|email protocol -> receive/send emails, allows you to download emails|
+|HTTP| Tim Berners-Lee | worlwide web: transfer data over the web|
+|VPN| Gurdeep Singhpal| a secure tunnel between two or more devices used to protect private web traffic from snooping, interference, and censorship.| 
+
+How will the information on this project be transmitted 
+---------------------------------------
+1- when my computer is sending the message, one specific light buzzer of all the computers must start blinking
+2- when it is sent, the light must stay on till the message is open and off for the computers that will not recieve the message.
+
+
+
+<p></details>
+
+
 <details><summary>Evaluation</summary>
   
   Evidence of success criteria
