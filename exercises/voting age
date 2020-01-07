@@ -1,0 +1,21 @@
+#include <stdio.h>
+//This program checks if the age of a candidate is eligible for casting his/her vote in Japan
+
+int main() {
+  int age;
+
+  //ask the user for his age
+  printf("Enter your age\n");
+  scanf("%d",&age);
+  //His vote is eligible if he is more than 20 years old
+  if (age >= 20)
+  {
+    printf("congratulations!Your are eligible for casting your vote\n");
+  }
+  //if he is not, hsis vote is not eligible 
+  else
+  {
+    printf("Sorry, you are not eligible for casting your vote\n");
+  }
+  return 0; 
+}
