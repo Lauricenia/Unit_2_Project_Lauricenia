@@ -119,6 +119,21 @@ POSNER I, MARS R. "Its not you, bad doors are everywhere" 2016. Retrieved https:
  1. RAM and flask (search)
  1. The computer is a linear machine
  
+ Reflection (9th day) - 6th January
+ ----------------
+ #### What did we do today:
+ 1. warm up practise on C programming language
+ 1. data formats of C language
+ 1. Protocols
+ 
+ #### What did you learn:
+ 1.Types of protocols
+ 1. C programming language (similarites and differences with arduino)
+ 
+ #### homework
+ 1. copy the protocols table to your repository
+ 
+ 
   
   
   
