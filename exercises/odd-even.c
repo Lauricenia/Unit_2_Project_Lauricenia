@@ -11,12 +11,12 @@ int main() {
   //If number is divisible by two it is even
    if (number%2 == 0)
    {
-     printf("The number is even\n");
+     printf("%d is an even intenger \n",number);
    }
    //if not, it is odd
    else
    {
-    printf("The number is odd\n"); 
+    printf("%d is an odd integer\n", number); 
    }
 
   return 0;
