@@ -7,22 +7,22 @@ int main() {
   printf("Enter the XY coordinates.\n");
   scanf("%i %i",&X, &Y);
   
-  //first quadrant
+  //first quadrant(+,+)
   if ( X > 0 && Y > 0)
   {
   printf("The coordinate point (%i, %i) lies in the first quadrant\n", X, Y);
   }
- //second quadrant
+ //second quadrant(-,+)
   if ( X < 0 && Y > 0)
   {
     printf("The coordinate point (%i, %i) lies in the second quadrant\n", X, Y);
   }
-  //third quadrant
+  //third quadrant(-,-)
   if ( X < 0 && Y < 0)
   {
     printf("The coordinate point (%i, %i) lies in the third quadrant\n", X, Y);
   }
-  //fourth quadrant
+  //fourth quadrant(+,-)
   if ( X > 0 && Y < 0)
   {
     printf("The coordinate point (%i, %i) lies in the fourth quadrant\n", X, Y);
