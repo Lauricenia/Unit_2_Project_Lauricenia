@@ -1,5 +1,5 @@
 #include <stdio.h>
-//This program checks the eligibility of admissio for a professional course based on a criteria
+//This program checks the eligibility of admission for a professional course based on a criteria
 
 int main() {
   int math, phy, chem, total, totalMathPhy;
