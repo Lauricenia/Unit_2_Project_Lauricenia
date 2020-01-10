@@ -1,19 +1,21 @@
 
 #include <stdio.h>
-//This program reads temperature in degrees and displays a message according to the temperature state 
+//This program checks wether a triangle can be formed by a given value for the angles.
 
 int main() {
-  int angle1,angle2,angle3, total;
-  //ask the user for the temperature 
-  printf("Enter the angles\n");
+  int angle1,angle2,angle3, angleSum;
+  //ask the user for the angle values
+  printf("Enter the values for the angles\n");
   scanf("%d %d %d", &angle1, &angle2, &angle3);
-  total = angle1 + angle2 + angle3;
- //if temperature 
- if (total == 180)
+  angleSum = angle1 + angle2 + angle3;
+
+ //if the sum of all angles equal 180, then the triangle can be formed
+ if (angleSum == 180)
 {
 
   printf("The triangle is valid\n");
 }
+//if not, it cannot 
 else
 {
   printf("The triangle is not valid\n");
