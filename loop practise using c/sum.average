@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+float number, sum ,average;
+
+int main() {
+
+printf( "Enter the 10 numbers for the addition\n");
+
+for (int c = 1; c <= 10; c++)
+  {
+    scanf("%f", &number);
+    sum = sum + number;
+  }
+ average = sum/10;
+
+  printf("Sum of the integers = %.0f\n", sum);
+  printf("The average of the integers = %f\n", average);
+
+  return 0;
+}
+
+
+
