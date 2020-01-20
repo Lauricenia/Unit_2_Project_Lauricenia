@@ -1,0 +1,15 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+int main() {
+int numbs[10] , i;
+
+for (i=0; i<=9; i++)
+{
+  numbs[i] = (rand() % 100)+1;
+
+printf("element %d : %d\n", i, numbs[i]);
+}
+
+  return 0;
+}
