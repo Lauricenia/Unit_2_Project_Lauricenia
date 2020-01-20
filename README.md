@@ -11,16 +11,17 @@ This repository will be used to record the steps for creating the mars communica
 
   Definition of the problem
   ==========================
-  My client,the National Aeronautics and Space Administration (NASA) is a U.S. government agency responsible for science and technology related to air and space[1]. The agency launched a competition among the most famous programmers to create a communication system between Earth and Mars, and the Moon and Mars. The requirements outlined by the agency was a system that allows the users in the stations of Mars to communicate seamlessly using English with the two other stations. The keyboard input on each station must be limited to 2 push buttons and only 100W lights buzzers must be available. The current technology limitates the Mars station to communicate only in binary. 
+  My client,the National Aeronautics and Space Administration (NASA) is a U.S. government agency responsible for science and technology related to air and space[1]. The agency launched a competition among the most famous programmers to create a communication system between the Moon and Mars. The requirements outlined by the agency was a system that allows the users in the stations to communicate seamlessly using English. The current technology limitates the keyboard input on each station to 2 push buttons with only 2 100W lights buzzers available and the capacity to communicate only in binary. 
   
   Proposed solution
   ===================
- Since the Mars station can only communicate using binary and the users must be able to send and recieve messages in english, its necessary to make a system that is able to execute the conversion between these two languages. The system should allow the user to enter the message in english then convert it to binary and send it to other station, in the same way, it should be able to receive the message in binary language and present it to the user in english. The user will be able to input the message using two buttons: left button - by which will browse through the options available (alphabet, digits,space,sent, delete) and the right button- by which can choose the option.
+Taking into account that the users must be able to send and receive messages in english and the technology limitations of the stations, the system must be able to execute the conversion between these two languages, input the english language using 2 push buttons and output the binary language by using the light buzzers. The system will have two components one that allows the user to input the message in english and other that converts the output into binary and send it to other station, in the same way, it should be able to receive the message in binary language and present it to the user in english. The user will be able to input the message using two buttons: left(blue) button - by which will browse through the options available (alphabet, digits,space,sent, delete) and the right(red) button- by which can choose the option. The system will be developed by using arduino, an open-source electronics platform based on easy-to-use hardware and software. I chose arduino because it is relatively less expensive than the rest of the microcontrollers platforms, it has an easy language and it's ready structure makes the wiring and testing process much easier and faster. Arduino also has a large internet comunity and a website that provide many examples and explanations of the arduino features. It also has online versions that enable me to test smaller parts of the program by using a virtual arduino hardware. Git Hub was used to record all the steps in the process of creating the Mars-Moon communication system. It helps in the organization and keeping track of the progress of the project.
+(how do you wish for the system to work exactly)
 
   Success criteria 
   ====================
   These are the measurable outcomes :
-  1. Users can communicate effectively in english using 2 buttons; 
+  1. Users can input message in english using 2 buttons; 
   1. System can send messages;
   1. System can receive messages; 
   1. System can convert messages from english to binary;
@@ -33,6 +34,7 @@ This repository will be used to record the steps for creating the mars communica
   
   System diagram
   ==============
+  
   first draft
   -------------
  ![](systemdiagram.jpg)
@@ -232,6 +234,9 @@ How will the information on this project be transmitted
   
   Recommendations for the future 
   ====================
+
+
+-----------------------------------
 
 
  <p></details>
