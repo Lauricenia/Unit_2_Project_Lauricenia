@@ -38,6 +38,20 @@ Taking into account that the users must be able to send and receive messages in 
   System diagram
   ==============
   
+  English Input 
+  ----------------------
+   ![](inputengSD.jng)
+   
+   Convert English to Binary
+   --------------------------
+   ![](engtobinSD.jpg)
+   
+   Convert Binary to English
+   ---------------------
+   ![](bintoengSD.jpg)
+   
+   
+   
   first draft
   -------------
  ![](systemdiagram.jpg)
