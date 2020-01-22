@@ -133,8 +133,14 @@ POSNER I, MARS R. "Its not you, bad doors are everywhere" 2016. Retrieved https:
  #### homework
  1. copy the protocols table to your repository
  
+ Reflection (10th day) - 6th January
+ ----------------
+ Reflection (9th day) - 22nd January
+ ----------------
+ memory presentation 
  
-  
+ 
+ 
   
   
  
