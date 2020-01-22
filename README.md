@@ -40,7 +40,7 @@ Taking into account that the users must be able to send and receive messages in 
   
   English Input 
   ----------------------
-   ![](System diagram/inputengSD.png)
+   ![](inputengSD.png)
    
    Convert English to Binary
    --------------------------
