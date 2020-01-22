@@ -40,15 +40,15 @@ Taking into account that the users must be able to send and receive messages in 
   
   English Input 
   ----------------------
-   ![](inputengSD.jng)
+   ![](inputengSD.png)
    
    Convert English to Binary
    --------------------------
-   ![](engtobinSD.jpg)
+   ![](engtobinSD.png)
    
    Convert Binary to English
    ---------------------
-   ![](bintoengSD.jpg)
+   ![](bintoengSD.png)
    
    
    
