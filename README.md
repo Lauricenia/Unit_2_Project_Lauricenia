@@ -59,7 +59,7 @@ Taking into account that the users must be able to send and receive messages in 
   ====================
   Flow chart for the English Input System
   ----------------
-  
+  ![](englishinputandconversion.png)
   
   
   
