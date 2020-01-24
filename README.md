@@ -17,7 +17,7 @@ This repository will be used to record the steps for creating the mars communica
   ===================
  Taking into account that the users must be able to write and receive messages in english despite the fact that the technology can only send/receive messages using binary, the new system must include a program that executes the conversion between these two languages. The sender will input the english message, the message will be converted and output using the light buzzers. The receiver must read the binary (1-On/ 0-off) and input the binary into a program that will convert it back to english. Thus, the system will have two big parts one that allows the user to input the message in english and converts the english message into binary(bulbs) and other that converts the binary message into english. 
  The system will be developed by using arduino. I chose arduino because it is relatively less expensive than the rest of the microcontrollers platforms, it has an easy language and it's ready structure makes the wiring and testing process much easier and faster. Arduino also has a large internet comunity and a website that provides many examples and explanations of it's features. It also has online simulators, I used tinkercad, that allows me to test smaller parts of the program, or work on the system when I dont have a physical arduino available. I am also using Git Hub to record all the steps of the creation of the Mars-Moon communication system. Git hub helps in the organization and keeping track of the progress of the project.
- Since this project is meant to be used in mars and moon, communication with earth for assistance may be difficult. Thus, one of the important goals for these project is making sure that the system is simpliflied and organized in such a way that will be easy for the users to understand and learn how to use it to (usability).
+ Since this project is meant to be used in mars and moon, communication with earth for assistance may be difficult. Thus, one of the important goals for these project is making sure that the system is simpliflied and organized in such a way that will be easy for the users to understand and learn how to use it to (usability*).
 
   Success criteria 
   ====================
@@ -29,6 +29,7 @@ This repository will be used to record the steps for creating the mars communica
   1. System can convert messages from binary to english;
   1. Usability.
   
+ *usability is the degree to which a software can be used by specified consumers to achieve quantified objectives with effectiveness, efficiency, and satisfaction in a quantified context of use.[2]
  
 <p></details>
  
@@ -180,6 +181,27 @@ void loop()
 { 
 }               
 ```
+
+PROTOCOL
+---------
+A protocol is a standard set of rules that allow electronic devices to communicate with each other. [4]
+Examples of protocols:
+|Protocol's name | created by | Used in |
+|----------------|------------|----------|
+| IP | Vint Cerf & Robert E.Kahn| host or network interface identification and location addressing|
+| FTP| Abhay Bhusan| transfering files between client and server|
+| SSH| Tatu Ylönen| log into a remote machine and execute commands|
+|SMTP| RFC 82l| sending/receiving email|
+|Telnet| UCLA| allows you to connect to remote computers(hosts)|
+|POP3| Mark Crisein|email protocol -> receive/send emails, allows you to download emails|
+|HTTP| Tim Berners-Lee | worlwide web: transfer data over the web|
+|VPN| Gurdeep Singhpal| a secure tunnel between two or more devices used to protect private web traffic from snooping, interference, and censorship.| 
+
+## Protocol for the Mars-Moon communication
+1. When the english message is being entered the both light buzzers will be turn on. 
+1. When the message is converted to binary, the "clock" buzzer will start turning on and off in the same time interval and the "binary" buzzer will turn on when the binary digit is 1 and off when the binary digit is 0. The 
+1.When conversion finishes, both buzzers will turn off.
+This allows the stations to know when the other station is writing a message, so that they can get ready to read he message in binary. And also to know when to stop reading.
 
 
  The algorithms for the Mars-Moon communication system
@@ -827,11 +849,11 @@ include the <LiquidCrystal.h> library
 1.position cursor for each value to be printed
 1.print keyboard,bin and text on LCD
 1. In changeletter() interrupt: 
-  - debounce button
+  - button debounce
   - add index (change option on LCD)
   -if index equals to numOptions (If it is the last option), then reset index to zero and the program returns to the main loop.
 1. In selectletter() interrupt:
-  -debounce button
+  - button debounce
   - if DEL is selected, the last character stored in the "text" variable is deleted
   - if SEND is selected:
   *the binary message in "bin" is converted into integer
@@ -856,38 +878,14 @@ keyboard values table
   Evidence of success criteria
   =========================
   
+  ![](evidenceofsuccess.png)
+  *Fig. 13: Testing for evidence of success criteria*
   
   Recommendations for the future 
   ====================
-
-
------------------------------------
- ## What is usability?
-
-```
-In software engineering, usability is the degree to which a software can be used by specified consumers to achieve quantified objectives with effectiveness, efficiency, and satisfaction in a quantified context of use.[2]
-```
-
-
-
-
-PROTOCOL
-==============
-|Protocol's name | created by | Used in |
-|----------------|------------|----------|
-| IP | Vint Cerf & Robert E.Kahn| host or network interface identification and location addressing|
-| FTP| Abhay Bhusan| transfering files between client and server|
-| SSH| Tatu Ylönen| log into a remote machine and execute commands|
-|SMTP| RFC 82l| sending/receiving email|
-|Telnet| UCLA| allows you to connect to remote computers(hosts)|
-|POP3| Mark Crisein|email protocol -> receive/send emails, allows you to download emails|
-|HTTP| Tim Berners-Lee | worlwide web: transfer data over the web|
-|VPN| Gurdeep Singhpal| a secure tunnel between two or more devices used to protect private web traffic from snooping, interference, and censorship.| 
-
-How will the information on this project be transmitted 
----------------------------------------
-1- when my computer is sending the message, one specific light buzzer of all the computers must start blinking
-2- when it is sent, the light must stay on till the message is open and off for the computers that will not recieve the message.
+In the end it was possible to achieve all the sucess criteria, however through out the development of the program, I realised that a few other features should have been added to the program:
+ 1. A communication system was set up, however, the methods for sending and receiving the message were not discussed. There is a lot to consider in this case since the environment in space is different from earth and the methods used in earth may not work in space.
+ 
 
  <p></details>
    
@@ -896,5 +894,6 @@ How will the information on this project be transmitted
  [1]https://www.nasa.gov/audience/forstudents/5-8/features/nasa-knows/what-is-nasa-58.html  
  [2]“Usability.” Usability - Computer Science Wiki, computersciencewiki.org/index.php/Usability.
  [3]https://www.arduino.cc/en/guide/introduction
+ [4]https://techterms.com/definition/protocol
  <p></details> 
 https://www.codeclouds.com/blog/advantages-disadvantages-using-github/
