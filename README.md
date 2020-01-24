@@ -37,43 +37,51 @@ This repository will be used to record the steps for creating the mars communica
   
   System diagram
   ==============
-  I divided the development of the project into 3 parts, to allow myself to focus on the 3 most important features of the project:the input,convertion from english to binary and convertion from binary to english. However, in the final version of system the figure and figure will be combined because the process in the figure 2 is the continuation of the process in figure one for the english to binary program.
   
-  English Input 
+  English Input and Conversion to Binary
   ----------------------
-  This part of the program illustrate the procedure by which the english language will be entered but it can also be represenative of the binary input procedure because it uses the same. The buttons serve as the input to and the lcd as the output from the arduino.
-   ![](inputengSD.png)
+  This image illustrates the english input and conversion function of the system. The buttons serve as the input : button 1 - by which will browse through the options available (alphabet,numbers: 0-9, space, send, delete) and the button 2- by which the user can choose the option. When the user chooses the option "SEND" the message will be converted to binary and the binary message will be directed to the system in FIG.
+   ![](enginputSD.png)
+   *Fig. 1: English input and conversion*
    
-   Convert English to Binary
+  Binary Output
    --------------------------
- Before the message is sent, it has to go through the process of being converted from english to binary so that it can be assimulated by the stations technology. The message written in english will be directed to another part of the system that will do this task. After it is converted, it will show the output in another station through the two light buzzers that will be present on the station.
-   ![](engtobinSD.png)
+The binary message will be output by a system of 2 light buzzers: one that keeps track of the time and the counting by blinking every second and other that keeps track of the binary message received by turning off when it is 0 and on when it is 1. Everytime the "clock" lamp turns on, represents one digit of the binary. On the final program this part will be directly linked with the system in figure .
+   ![](outputbinSD.png)
+   *Fig. 2: Binary output*
    
-   Convert Binary to English
+   Binary input and Conversion to English
    ---------------------
-   Once the light buzzers are starting to output the binary message, the user should be ready to interpret the zeros and ones and input them in another part of the system responsible for the conversion from binary to english by using a similar input system as of the english input, however just with less options since to write binary, its necessary only 1 and 0. 
+   Once the light buzzers are starting to output the binary message, the user should be ready to read the zeros and ones and input them in another part of the system responsible for the conversion from binary to english by using a similar input system as of the english input, however with less options since to write binary, its only necessary 1 and 0. The English message resultant from the conversion will be output on the LCD.
    ![](bintoengSD.png)
-  
+  *Fig. 3 : Binary input and conversion*
  
   Algorithms flow diagram
   ====================
+  
   Flow chart for the English Input and conversion to binary program
   ----------------
   ![](englishinputandconversion.png)
+  *Fig. 4 : English input*
   
   ![](2ndpartengtobin.png)
-
+ *Fig. 5 :English to binary and binary output*
 
   
   Flow chart for the Binary input and conversion to english program
   -----------------
   
   ![](FD-bintoenglish.png)
+  *Fig.6 : Binary input and binary to english*
   
   ![](2ndpartbintoeng.png)
-
+ *Fig. 7: Binary to english-part2*
+ 
+ 
   Testplan
   ============
+  
+  
 <p></details>
  
  
@@ -81,10 +89,12 @@ This repository will be used to record the steps for creating the mars communica
  
 First steps
 ---------------
- In the process of picturing the project, many single short programs were tested. At the end most of them were used in some parts of the system and helped in the process of bulding the system, for example, to test the light buzzers functionality:
+ In the process of brainstorming the ideas for the project, many single short programs were tested. At the end most of them were used in some parts of the system and helped in the process of building the system, for example, to test the binary output functionality,the program in Fig.9 was used:
  
  ## Single led blink program
  ![](blinky.gif)
+ *Fig. 9- single led blink*
+ 
  ```.sh
  void setup()
 {
@@ -111,9 +121,10 @@ void loop()
    ```
  
  ## 8 lcds
- -This program forms numbers from 0 to 1 with the leds using boolean logic.
+ -This program forms numbers from 0 to 1 with the leds using boolean logic. (ended up not being used but helped in the understanding of binary)
  
  ![](8lcd.gif)
+ *Fig. 10- the 8 lcd*
  
  ```.sh
  bool  a = ( !A & !C ) | B | ( A & C );
@@ -135,7 +146,7 @@ digitalWrite(out7, g );
                      
  ```
  ## Convert binary to decimal
- -This program converts a decimal input by the user into binary representation
+ -This program converts a decimal input by the user into binary representation(this program was used in the conversion of binary to english )
  ```.sh
  String numb = "";
 int remainder;
@@ -168,6 +179,8 @@ void loop()
 { 
 }               
 ```
+
+
  The algorithms for the Mars-Moon communication system
  -------------------
 
@@ -526,6 +539,7 @@ The following steps summarize the algorithms to convert english to binary:
 Keyboard values table 
 --------
 ![](keyboard1.png)
+*Fig. 11: English keyboard options and their functions*
 
 ## Convert binary to english
 ```.sh
@@ -831,6 +845,8 @@ include the <LiquidCrystal.h> library
 keyboard values table
 -----------
 ![](keyboard2.png)
+*Fig. 12: Binary Keyboard options and functions*
+
 <p></details>
 
 
