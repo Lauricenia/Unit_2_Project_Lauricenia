@@ -65,8 +65,11 @@ Taking into account that the users must be able to send and receive messages in 
   
   
   Flow chart for the Binary input and conversion to english program
-  -------------------
+  -----------------
   
+  ![](FD-bintoenglish.png)
+  
+  ![](2ndpartbintoeng.png)
 
   Testplan
   ============
