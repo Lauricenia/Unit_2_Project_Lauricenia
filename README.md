@@ -530,19 +530,19 @@ The following steps summarize the algorithms to input the english message into t
   - button debounce
   - add index (change keyboard option on LCD)
   - if index equals to numOptions (If it is the last option), then reset index to zero and the program returns to the main loop.
-1. In select() interrupt:
+11. In select() interrupt:
   - button debounce
   - if DEL is selected, the last character stored in the "text" variable is deleted
   - if SEND is selected, it goes to the conversion() function then the "text" variable is emptied
   - if SPACE is selected, a space is added to the "text" variable
   - if any of the characters/numbers are selected, they are added to the "text" variable
   - after an option is selected, the index resets to zero and the program returns to the main loop
- 1. In the conversion():
+ 12. In the conversion():
  - separate the message in characters
  - send the characters to the function engtobin() to convert it them their binary representation
- 1. In the engtobin():
+ 13. In the engtobin():
  - send the binary representation to the function binToLight() to show the ouput
- 1. In the binToLight():
+ 14. In the binToLight():
  - the binary number is separated into digits
  - When digit equals zero, light is turned on, else, it is turned off.
  - The other light buzzer turns on for one second while the binary light buzzers outputs the binary digits.
@@ -844,7 +844,7 @@ include the <LiquidCrystal.h> library
   - button debounce
   - add index (change option on LCD)
   -if index equals to numOptions (If it is the last option), then reset index to zero and the program returns to the main loop.
-1. In selectletter() interrupt:
+9. In selectletter() interrupt:
   - button debounce
   - if DEL is selected, the last character stored in the "text" variable is deleted
   - if SEND is selected:
@@ -854,7 +854,7 @@ include the <LiquidCrystal.h> library
   *the "bin" variable is emptied;*
   - if 1 or 0 are selected, they are added to the "text" variable
   -after an option is selected, the index resets to zero and the program returns to the main loop
-1. dectoeng function:
+10. dectoeng function:
   -The character that represents the decimal number is added to the "text" string.
   
 keyboard binary values table
@@ -863,7 +863,7 @@ keyboard binary values table
 
 *Fig. 12: Binary Keyboard options and functions*
 
-Brief manuals
+Printed manuals
 =========
 English to Binary
 -----------
