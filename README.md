@@ -41,20 +41,23 @@ This repository will be used to record the steps for creating the mars communica
   
   English Input and Conversion to Binary
   ----------------------
-  This image illustrates the english input and conversion function of the system. The buttons serve as the input : button 1 - by which will browse through the options available (alphabet,numbers: 0-9, space, send, delete) and the button 2- by which the user can choose the option. When the user chooses the option "SEND" the message will be converted to binary and the binary message will be directed to the system in FIG.
+  This image illustrates the english input and conversion function of the system. The buttons serve as the input : button 1 - by which the uer will browse through the options available (alphabet,numbers: 0-9, space, send, delete) and the button 2- by which the user can choose the option. When the option "SEND" is chosen the message will be converted to binary and the binary message will be directed to the system in FIG. 2.
    ![](enginputSD.png)
+   
    *Fig. 1: English input and conversion*
    
   Binary Output
    --------------------------
-The binary message will be output by a system of 2 light buzzers: one that keeps track of the time and the counting by blinking every second and other that keeps track of the binary message received by turning off when it is 0 and on when it is 1. Everytime the "clock" lamp turns on, represents one digit of the binary. On the final program this part will be directly linked with the system in figure .
+The binary message will be output by a system of 2 light buzzers: one that keeps track of the time and the counting by blinking every second and other that keeps track of the binary message received by turning off when it is 0 and on when it is 1. On the final program this part will be directly linked with the system in FIG. 1.
    ![](outputbinSD.png)
+   
    *Fig. 2: Binary output*
    
    Binary input and Conversion to English
    ---------------------
    Once the light buzzers are starting to output the binary message, the user should be ready to read the zeros and ones and input them in another part of the system responsible for the conversion from binary to english by using a similar input system as of the english input, however with less options since to write binary, its only necessary 1 and 0. The English message resultant from the conversion will be output on the LCD.
    ![](bintoengSD.png)
+   
   *Fig. 3 : Binary input and conversion*
  
   Algorithms flow diagram
@@ -63,9 +66,11 @@ The binary message will be output by a system of 2 light buzzers: one that keeps
   Flow chart for the English Input and conversion to binary program
   ----------------
   ![](englishinputandconversion.png)
+  
   *Fig. 4 : English input*
   
   ![](2ndpartengtobin.png)
+  
  *Fig. 5 :English to binary and binary output*
 
   
@@ -73,15 +78,18 @@ The binary message will be output by a system of 2 light buzzers: one that keeps
   -----------------
   
   ![](FD-bintoenglish.png)
+  
   *Fig.6 : Binary input and binary to english*
   
   ![](2ndpartbintoeng.png)
+  
  *Fig. 7: Binary to english-part2*
  
  
   Test plan
   ============
   ![](test.png)
+  
   *Fig. 8: Test plan*
   
 <p></details>
@@ -95,6 +103,7 @@ First steps
  
  ## Single led blink program
  ![](blinky.gif)
+ 
  *Fig. 9- single led blink*
  
  ```.sh
@@ -123,9 +132,10 @@ void loop()
    ```
  
  ## 8 lcds
- -This program forms numbers from 0 to 1 with the leds using boolean logic. (ended up not being used but helped in the understanding of binary)
+ -This program forms numbers from 0 to 1 with the leds using boolean logic. (This program ended up not being used but helped in the understanding of binary)
  
  ![](8lcd.gif)
+ 
  *Fig. 10- the 8 lcd*
  
  ```.sh
@@ -148,7 +158,7 @@ digitalWrite(out7, g );
                      
  ```
  ## Convert binary to decimal
- -This program converts a decimal input by the user into binary representation(this program was used in the conversion of binary to english )
+ -This program converts a decimal input by the user into binary representation (this program was used in the conversion of binary to english )
  ```.sh
  String numb = "";
 int remainder;
@@ -186,6 +196,7 @@ PROTOCOL
 ---------
 A protocol is a standard set of rules that allow electronic devices to communicate with each other. [4]
 Examples of protocols:
+
 |Protocol's name | created by | Used in |
 |----------------|------------|----------|
 | IP | Vint Cerf & Robert E.Kahn| host or network interface identification and location addressing|
@@ -198,14 +209,14 @@ Examples of protocols:
 |VPN| Gurdeep Singhpal| a secure tunnel between two or more devices used to protect private web traffic from snooping, interference, and censorship.| 
 
 ## Protocol for the Mars-Moon communication
-1. When the english message is being entered the both light buzzers will be turn on. 
-1. When the message is converted to binary, the "clock" buzzer will start turning on and off in the same time interval and the "binary" buzzer will turn on when the binary digit is 1 and off when the binary digit is 0. The 
-1.When conversion finishes, both buzzers will turn off.
-This allows the stations to know when the other station is writing a message, so that they can get ready to read he message in binary. And also to know when to stop reading.
+1. When the english message is being entered both light buzzers will be turned on. 
+1. When the message is converted to binary, the "clock" buzzer will start turning on and off in the same time interval and the "binary" buzzer will turn on when the binary digit is 1 and off when the binary digit is 0. Everytime the "clock" lamp turns on, represents one digit of the binary.
+1. When conversion finishes, both buzzers will turn off.
+This protocol allows the stations to know when the other station is writing a message, so that they can get ready to read the message in binary. And also to know when the message finishes.
 
 
  The algorithms for the Mars-Moon communication system
- -------------------
+=================
 
 ## English Input System  
 
@@ -562,6 +573,7 @@ The following steps summarize the algorithms to convert english to binary:
 Keyboard values table 
 --------
 ![](keyboard1.png)
+
 *Fig. 11: English keyboard options and their functions*
 
 ## Convert binary to english
@@ -877,8 +889,9 @@ keyboard values table
   
   Evidence of success criteria
   =========================
-  
+ 
   ![](evidenceofsuccess.png)
+  
   *Fig. 13: Testing for evidence of success criteria*
   
   Recommendations for the future 
@@ -891,9 +904,13 @@ In the end it was possible to achieve all the sucess criteria, however through o
    
   
  <details><summary>References</summary>
- [1]https://www.nasa.gov/audience/forstudents/5-8/features/nasa-knows/what-is-nasa-58.html  
+ 
+ [1]https://www.nasa.gov/audience/forstudents/5-8/features/nasa-knows/what-is-nasa-58.html
+ 
  [2]“Usability.” Usability - Computer Science Wiki, computersciencewiki.org/index.php/Usability.
+ 
  [3]https://www.arduino.cc/en/guide/introduction
+ 
  [4]https://techterms.com/definition/protocol
  <p></details> 
 
