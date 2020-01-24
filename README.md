@@ -835,11 +835,11 @@ The following steps summarize the algorithms to convert binary to english :
 include the <LiquidCrystal.h> library
 1. define variables (keyboard, index, numOptions, bin, todecode,bidigit, decimal,i, text);
 1. initialize the library
-1.set up LCD
-1.set up interrupts
-1.turn on LCD
-1.position cursor for each value to be printed
-1.print keyboard,bin and text on LCD
+1. set up LCD
+1. set up interrupts
+1. turn on LCD
+1. position cursor for each value to be printed
+1. print keyboard,bin and text on LCD
 1. In changeletter() interrupt: 
   - button debounce
   - add index (change option on LCD)
