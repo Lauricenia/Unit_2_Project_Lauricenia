@@ -11,23 +11,23 @@ This repository will be used to record the steps for creating the mars communica
 
   Definition of the problem
   ==========================
-  My client,the National Aeronautics and Space Administration (NASA) is a U.S. government agency responsible for science and technology related to air and space[1]. The agency launched a competition among the most famous programmers to create a communication system between the Moon and Mars. The requirements outlined by the agency was a system that allows the users in the stations to communicate seamlessly using English. The current technology limitates the keyboard input on each station to 2 push buttons with only 2 100W lights buzzers available and the capacity to communicate only in binary. 
+  My client,the National Aeronautics and Space Administration (NASA) is a U.S. government agency responsible for science and technology related to air and space[1]. The agency launched a competition among the most famous programmers to create a communication system between the Moon and Mars. The current technology limitates the keyboard hardware on each station to 2 push buttons, only 2 100W lights buzzers are available and the exchange of messages between the stations is only possible using the binary language. The requirement outlined by the agency was a system that allows the users in the stations to communicate seamlessly using English making use of the precarious technology available.
   
   Proposed solution
   ===================
-Taking into account that the users must be able to send and receive messages in english and the technology limitations of the stations, the system must be able to execute the conversion between these two languages, input the english language using 2 push buttons and output the binary language by using the light buzzers. This project is meant to be projected into mars and moon. Taking into consideration that it will be the first contact for the users with a system like this one and it is an experimental project in two planets in which communication with earth for assistance may be difficult , one of the important goals for these project was making sure that the system was simpliflied and organized in such a way that would easy for the user to learn how to use it to. For that we had to make sure the program was designed accordingly with the needs of the stations and the users(usability). The system will have three components one that allows the user to input the message in english, one that converts the english message into binary and sends the message and other that converts the binary message into english. The user will be able to input the message using two buttons: left(blue) button - by which will browse through the options available (alphabet, digits,space,sent, delete) and the right(red) button- by which can choose the option. When the user chooses the option "send" the message will be converted to binary and then sent to the other station. When in the other station, the message will be output by a system of 2 light buzzers: one that keeps track of the time and counting by blinking every second and the other that keeps track of the binary message sent by turning off when its 0 and on when 1. Everytime the time lamp turns on, represents one digit of the binary. The user will have to read the binary message using both lamps and input it to the program that will convert it to english. The system will be developed by using arduino, an open-source electronics platform based on easy-to-use hardware and software. I chose arduino because it is relatively less expensive than the rest of the microcontrollers platforms, it has an easy language and it's ready structure makes the wiring and testing process much easier and faster. Arduino also has a large internet comunity and a website that provide many examples and explanations of the arduino features. It also has online versions that enable me to test smaller parts of the program by using a virtual arduino hardware. Git Hub will be used to record all the steps in the process of creating the Mars-Moon communication system. It helps in the organization and keeping track of the progress of the project.
-(how do you wish for the system to work exactly)
+ Taking into account that the users must be able to write and receive messages in english despite the fact that the technology can only send/receive messages using binary, the new system must include a program that executes the conversion between these two languages. The sender will input the english message, the message will be converted and output using the light buzzers. The receiver must read the binary (1-On/ 0-off) and input the binary into a program that will convert it back to english. Thus, the system will have two big parts one that allows the user to input the message in english and converts the english message into binary(bulbs) and other that converts the binary message into english. 
+ The system will be developed by using arduino. I chose arduino because it is relatively less expensive than the rest of the microcontrollers platforms, it has an easy language and it's ready structure makes the wiring and testing process much easier and faster. Arduino also has a large internet comunity and a website that provides many examples and explanations of it's features. It also has online simulators, I used tinkercad, that allows me to test smaller parts of the program, or work on the system when I dont have a physical arduino available. I am also using Git Hub to record all the steps of the creation of the Mars-Moon communication system. Git hub helps in the organization and keeping track of the progress of the project.
+ Since this project is meant to be used in mars and moon, communication with earth for assistance may be difficult. Thus, one of the important goals for these project is making sure that the system is simpliflied and organized in such a way that will be easy for the users to understand and learn how to use it to (usability).
 
   Success criteria 
   ====================
   These are the measurable outcomes :
-  1. Users can input message in english using 2 buttons; 
-  1. System can send messages;
-  1. System can receive messages; 
-  1. System can convert messages from english to binary;
-  1.System can input message in binary using 2 buttons;
-  1. System can convert messages from binary to english.
-  1.Usability.
+  1. The system can input message(in english/binary);
+  1. The binary message can be shown using bulbs;
+  1. The english message converted from binary can be shown on the LCD;
+  1. System can convert messages from  english to binary;
+  1. System can convert messages from binary to english;
+  1. Usability.
   
  
 <p></details>
@@ -878,5 +878,6 @@ How will the information on this project be transmitted
  <details><summary>References</summary>
  [1]https://www.nasa.gov/audience/forstudents/5-8/features/nasa-knows/what-is-nasa-58.html  
  [2]“Usability.” Usability - Computer Science Wiki, computersciencewiki.org/index.php/Usability.
+ [3]https://www.arduino.cc/en/guide/introduction
  <p></details> 
 https://www.codeclouds.com/blog/advantages-disadvantages-using-github/
