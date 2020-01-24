@@ -78,9 +78,10 @@ The binary message will be output by a system of 2 light buzzers: one that keeps
  *Fig. 7: Binary to english-part2*
  
  
-  Testplan
+  Test plan
   ============
-  
+  ![](test.png)
+  *Fig. 8: Test plan*
   
 <p></details>
  
