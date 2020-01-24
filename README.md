@@ -896,4 +896,4 @@ In the end it was possible to achieve all the sucess criteria, however through o
  [3]https://www.arduino.cc/en/guide/introduction
  [4]https://techterms.com/definition/protocol
  <p></details> 
-https://www.codeclouds.com/blog/advantages-disadvantages-using-github/
+
