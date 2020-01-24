@@ -523,6 +523,9 @@ The following steps summarize the algorithms to convert english to binary:
 1. The other light buzzer turns on for one second while the binary light buzzers outputs the binary digits.
 1.The while loop prevents the program from repeting itself unnecessary
 
+Keyboard values table 
+--------
+![](keyboard1.png)
 
 ## Convert binary to english
 ```.sh
@@ -824,7 +827,10 @@ include the <LiquidCrystal.h> library
   -after an option is selected, the index resets to zero and the program returns to the main loop
 1. dectoeng function:
   -The character that represents the decimal number is added to the "text" string.
-
+  
+keyboard values table
+-----------
+![](keyboard2.png)
 <p></details>
 
 
