@@ -37,11 +37,11 @@ This repository will be used to record the steps for creating the mars communica
   
   System diagram
   ==============
-  The design of the program is divided into 3 main parts:
+  I divided the development of the project into 3 parts, to allow myself to focus on the 3 most important features of the project:the input,convertion from english to binary and convertion from binary to english. However, in the final version of system the figure and figure will be combined because the process in the figure 2 is the continuation of the process in figure one for the english to binary program.
   
   English Input 
   ----------------------
-  This part of the program illustrate the procedure by which the english language will be entered. The buttons serve as the input to and the lcd as the output from the arduino.
+  This part of the program illustrate the procedure by which the english language will be entered but it can also be represenative of the binary input procedure because it uses the same. The buttons serve as the input to and the lcd as the output from the arduino.
    ![](inputengSD.png)
    
    Convert English to Binary
