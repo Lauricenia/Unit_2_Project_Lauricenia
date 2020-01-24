@@ -863,6 +863,42 @@ keyboard binary values table
 
 *Fig. 12: Binary Keyboard options and functions*
 
+Brief manuals
+=========
+English to Binary
+-----------
+This is the manual of how to use the “English to binary program”. 
+
+This program has 2 input buttons with color blue and red.
+With 2 output buzzers that shows binary code.
+
+By pressing the blue button, you can browse through the options. 
+Options are “SEND”,“DEL” ,“SPACE”,“A”,“B”.....”Z”. You can learn the function of each option in the FIG. 11.
+When you accidentally pass through the option you want to select, you have to go through the whole loop again .
+
+By pressing the red button you can select the options. if you select the “SEND” option, the program will send the message you inputted to convert. After you send the text you inputted, the output light will blink. This will show the text you typed in binary code.
+
+One light will blink on a regular basis, this light is used as counter. This will blink to count the number of digits of the binary number.Other light will blink to show the binary code.
+
+For example, “A” is “000001” in binary. This case the light will be off for the the first 5 blinks of the counter clock and blink once for the last count.
+
+Binary to English
+-------------
+This is the manual of how to use the “English to binary program”. 
+
+This program has 2 input buttons with color blue and red.
+With 2 output buzzers that shows binary code.
+
+By pressing the blue button, you can browse through the options. 
+Options are “SEND”,“DEL”,“SPACE”,“0”,“1”. You can learn the function of each option in the FIG. 12.
+When you accidentally pass through the option you want to select, you have to go through the whole loop again.
+When you accidentatlly select the wrong binary digit, you have to select "SEND", then select "DEL" to erase the last letter added, and write the right binary number.
+
+By pressing the red button you can select the options. if you select the “SEND” option, the program will send the message you inputted to convert. After it is sent, the message in english will appear on the LCD.
+
+To know how to read the binary shown by the buzzers, please read the English to Binary section. 
+
+
 <p></details>
 
 
@@ -871,14 +907,14 @@ keyboard binary values table
   Evidence of success criteria
   =========================
  
-  ![](evidenceofsuccess .png)
+![](evidenceofsuccess.png)
   
   *Fig. 13: Testing for evidence of success criteria*
   
   Recommendations for the future 
   ====================
 In the end it was possible to achieve all the sucess criteria, however through out the development of the program, I realised that a few other features should have been added to the program:
- 1. A communication system was set up, however, the methods for sending and receiving the message were not discussed. There is a lot to consider in this case since the environment in space is different from earth and the methods used in earth may not work in space.
+ 1. A communication system was set up, however, the methods for sending and receiving the message were not discussed. There is a lot to consider in this case since the environment in space is different from earth and methods used in earth may not work in space.
  
 
  <p></details>
