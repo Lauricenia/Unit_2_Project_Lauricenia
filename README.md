@@ -57,12 +57,17 @@ Taking into account that the users must be able to send and receive messages in 
  
   Algorithms flow diagram
   ====================
-  Flow chart for the English Input System
+  Flow chart for the English Input and conversion to binary program
   ----------------
   ![](englishinputandconversion.png)
   
+  ![](2ndpartengtobin.png)
   
   
+  Flow chart for the Binary input and conversion to english program
+  -------------------
+  
+
   Testplan
   ============
 <p></details>
