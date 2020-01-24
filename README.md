@@ -62,7 +62,8 @@ Taking into account that the users must be able to send and receive messages in 
   ![](englishinputandconversion.png)
   
   ![](2ndpartengtobin.png)
-  
+
+
   
   Flow chart for the Binary input and conversion to english program
   -----------------
