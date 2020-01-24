@@ -194,7 +194,8 @@ void loop()
 
 PROTOCOL
 ---------
-A protocol is a standard set of rules that allow electronic devices to communicate with each other. [4]
+A protocol is a standard set of rules that allow electronic devices to communicate with each other.[4]
+
 Examples of protocols:
 
 |Protocol's name | created by | Used in |
@@ -212,26 +213,29 @@ Examples of protocols:
 1. When the english message is being entered both light buzzers will be turned on. 
 1. When the message is converted to binary, the "clock" buzzer will start turning on and off in the same time interval and the "binary" buzzer will turn on when the binary digit is 1 and off when the binary digit is 0. Everytime the "clock" lamp turns on, represents one digit of the binary.
 1. When conversion finishes, both buzzers will turn off.
+
 This protocol allows the stations to know when the other station is writing a message, so that they can get ready to read the message in binary. And also to know when the message finishes.
 
 
  The algorithms for the Mars-Moon communication system
 =================
 
-## English Input System  
+## English Input and conversion to binary
 
 ```.sh
 // include the library code:
 #include <LiquidCrystal.h>
+int index = 0; 
 // add all the letters and digits to the keyboard
-String keyboard[]={"SEND", "DEL", "SPACE", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", };
+String keyboard[]={"SENT", "DEL", "SPACE", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", };
 
 int numOptions = 39; //size of keyboard
 
-int index = 0; 
-
 String text = "";//variable to store input
 
+int lightBulb1=6;
+int lightBulb2=7;
+char toconvert;
 
 // initialize the library with the numbers of the interface pins
 LiquidCrystal lcd(12, 11, 5, 4, 9, 8);
@@ -239,11 +243,16 @@ LiquidCrystal lcd(12, 11, 5, 4, 9, 8);
 void setup() {
   // set up the LCD's number of columns and rows:
   lcd.begin(16, 2);
+  // Print a message to the LCD.
   attachInterrupt(0, changeLetter, RISING);//button A in port 2
   attachInterrupt(1, selected, RISING);//button B in port 3
+Serial.begin(9600);
+  pinMode(lightBulb1,OUTPUT);
+  pinMode(lightBulb2,OUTPUT);
 }
 
 void loop() {
+  //start lcd
   // set the cursor to column 0, line 1
   // (note: line 1 is the second row, since counting begins with 0):
   lcd.clear();
@@ -256,9 +265,9 @@ void loop() {
   delay(100);
 }
 
-//This function changes the keyboard option
+//This function changes the letter in the keyboard
 void changeLetter(){
-  //debounce function
+  //debouce button
   static unsigned long last_interrupt_time = 0;
   unsigned long interrupt_time = millis();
   if (interrupt_time - last_interrupt_time > 200)
@@ -270,12 +279,11 @@ void changeLetter(){
     if(index==numOptions){
       index=0; //loop back to first row
     } 
-  }
+ }
 }
 
 //this function adds the letter to the text or send the msg
 void selected(){
-//debounce function
   static unsigned long last_interrupt_time = 0;
   unsigned long interrupt_time = millis();
   if (interrupt_time - last_interrupt_time > 200)
@@ -290,9 +298,10 @@ void selected(){
       int len = text.length();
       text.remove(len-1);
     }
-    //if SEND is selected, the "text" variable is emptied
-    else if(key == "SEND")
+    //if SENT is selected, the "text" variable is emptied
+    else if(key == "SENT")
     {
+      conversion();
       text="";
     }
     //if SPACE is selected, a space is added to the "text" variable
@@ -300,78 +309,28 @@ void selected(){
     { 
       text += " ";
     }
-    //if any of the characters and numbers are selected, they are stored to the "text" variable
+    //if any othe roption(characters and numbers) are selected, they are stored to the "text" variable
     else{
       text+= key;
     }
-    //after an option is selected, the program loops back to the first option
+    //after any option is selected, the program loops back to the first option
     index = 0; 
   }
   
   
 }
-```
-The following steps summarize the algorithms to input the english message into the system:
-1. include the <LiquidCrystal.h> library
-1. define variables (keyboard, index, numOptions, text);
-1. initialize the library
-1.set up LCD
-1.set interrupts
-1.turn on LCD
-1.position cursor for each value to be printed
-1.print keyboard and text on LCD
-1. In changeletter() interrupt: 
-  - debounce button
-  - add index (change option on LCD)
-  -if index equals to numOptions (If it is the last option), then reset index to zero and the program returns to the main loop.
-1. In selectletter() interrupt:
-  -debounce button
-  - if DEL is selected, the last character stored in the "text" variable is deleted
-  - if SEND is selected, the "text" variable is emptied
-  -if SPACE is selected, a space is added to the "text" variable
-  - if any of the characters/numbers are selected, they are added to the "text" variable
-  -after an option is selected, the index resets to zero and the program returns to the main loop
 
 
-## Convert English to binary and output through light buzzers
-```.sh
-String engtext= "THIS IS A TEST";
-int lightBulb1=6;
-int lightBulb2=7;
-char toconvert;
-
-void setup()
+void conversion()
 {
-  Serial.begin(9600);
-  pinMode(lightBulb1,OUTPUT);
-  pinMode(lightBulb2,OUTPUT);
-}
-
-void loop()
-{
-  //separate the message in characters
-  for ( int n=0; n < engtext.length(); n++)
+  for ( int n=0; n < text.length(); n++)
   {
-   toconvert= engtext.charAt(n);
+   toconvert= text.charAt(n);
     Serial.println(toconvert); 
-    //send character to engtobin function to convert it to binary
-     engTobin(toconvert);
-  }
-  digitalWrite(lightBulb2, LOW);
-  delay(2000);
-  digitalWrite(lightBulb1, HIGH);
-  digitalWrite(lightBulb2, HIGH);
-  delay(100);
-  digitalWrite(lightBulb1, LOW);
-  digitalWrite(lightBulb2, LOW);
-  
-  
-  while(1)
-  {
-    //stop loop 
+    engTobin(toconvert);
   }
 }
-//function to convert the character into binary
+
 void engTobin(char x)
 {
   switch(toconvert)
@@ -526,9 +485,7 @@ void engTobin(char x)
       binToLightBulb("100101");
       break; 
     default:
-      digitalWrite(lightBulb1, LOW);
-    
-    
+      digitalWrite(lightBulb1, LOW); 
   }
     
 }
@@ -551,26 +508,48 @@ void binToLightBulb(char x[]){
       digitalWrite(lightBulb2, LOW);
     }
     //wait a second
-    delay(1000);
+    delay(200000);
     //turn off CLOCK
     digitalWrite(lightBulb1,LOW);
-    delay(1000);
+    delay(200000);
   }
   
 }
 ```
-The following steps summarize the algorithms to convert english to binary:
-1. define variables
-1. set the light buzzers as outputs
-1. separate the message in characters
-1. send the characters to the function engtobin() to convert it them their binary representation
-1. send the binary representation to the function binToLight() to show the ouput
-1. the binary number is separated into digits
-1. When digit equals zero, light is turned on, else, it is turned off.
-1. The other light buzzer turns on for one second while the binary light buzzers outputs the binary digits.
-1.The while loop prevents the program from repeting itself unnecessary
+The following steps summarize the algorithms to input the english message into the system:
+1. include the <LiquidCrystal.h> library
+1. define variables (keyboard, index, numOptions, text...);
+1. initialize the library
+1. set up LCD
+1. set interrupts
+1. set up light buzzers mode
+1. turn on LCD
+1. position cursor for each value to be printed
+1. print keyboard and text on LCD
+1. In changeletter() interrupt: 
+  - button debounce
+  - add index (change keyboard option on LCD)
+  - if index equals to numOptions (If it is the last option), then reset index to zero and the program returns to the main loop.
+1. In select() interrupt:
+  - button debounce
+  - if DEL is selected, the last character stored in the "text" variable is deleted
+  - if SEND is selected, it goes to the conversion() function then the "text" variable is emptied
+  - if SPACE is selected, a space is added to the "text" variable
+  - if any of the characters/numbers are selected, they are added to the "text" variable
+  - after an option is selected, the index resets to zero and the program returns to the main loop
+ 1. In the conversion():
+ - separate the message in characters
+ - send the characters to the function engtobin() to convert it them their binary representation
+ 1. In the engtobin():
+ - send the binary representation to the function binToLight() to show the ouput
+ 1. In the binToLight():
+ - the binary number is separated into digits
+ - When digit equals zero, light is turned on, else, it is turned off.
+ - The other light buzzer turns on for one second while the binary light buzzers outputs the binary digits.
+ - The while loop prevents the program from repeting itself unnecessary
+ 
 
-Keyboard values table 
+Keyboard english values table 
 --------
 ![](keyboard1.png)
 
@@ -667,16 +646,16 @@ void selected(){
     {
       todecode = bin.toInt();
       while (todecode > 0) {
-        remainder = todecode % 10;
+        bidigit = todecode % 10;
           
-        bidigit = decimal + bidigit * ( 0.5 + pow(2,i) );
+        decimal= decimal + bidigit * ( 0.5 + pow(2,i) );
         
         todecode = todecode / 10;
         i++;
       }
       Serial.println(decimal);
       //The decimal is sent to the bintoeng function
-      bintoeng(decimal);
+      dectoeng(decimal);
       //the input is set to empty again
       bin = " ";
       //restart all the variables in the conversion process
@@ -695,9 +674,9 @@ void selected(){
 }
 
 //function to convert decimal to character
-void bintoeng(int sum){
+void dectoeng(int decimal){
   //each decimal represent a binary that represents a character
-  switch(sum){
+  switch(decimal){
   case 1:
     Serial.println("A");
     text += "A";
@@ -849,7 +828,8 @@ void bintoeng(int sum){
     text += " ";
     break;
   }
-}   
+}
+    
 ```
 The following steps summarize the algorithms to convert binary to english :
 include the <LiquidCrystal.h> library
@@ -877,9 +857,10 @@ include the <LiquidCrystal.h> library
 1. dectoeng function:
   -The character that represents the decimal number is added to the "text" string.
   
-keyboard values table
+keyboard binary values table
 -----------
 ![](keyboard2.png)
+
 *Fig. 12: Binary Keyboard options and functions*
 
 <p></details>
@@ -890,7 +871,7 @@ keyboard values table
   Evidence of success criteria
   =========================
  
-  ![](evidenceofsuccess.png)
+  ![](evidenceofsuccess .png)
   
   *Fig. 13: Testing for evidence of success criteria*
   
