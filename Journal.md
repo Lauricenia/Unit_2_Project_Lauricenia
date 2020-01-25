@@ -133,11 +133,38 @@ POSNER I, MARS R. "Its not you, bad doors are everywhere" 2016. Retrieved https:
  #### homework
  1. copy the protocols table to your repository
  
- Reflection (10th day) - 6th January
+ Reflection (10th day) - 8th January
  ----------------
- Reflection (9th day) - 22nd January
+  #### What did we do today:
+  1. warm up practise
+  1. Working on unit 2 project
+  
+  #### What did you learn:
+  1. printing feature in C 
+  
+  Reflection (11th day) - 13th January
  ----------------
- memory presentation 
+  #### What did we do today:
+  1. warm up practise
+  1. Working on unit 2 project
+  
+  #### What did you learn:
+  1. random numbers syntax in C 
+  
+ Reflection (12th day) - 21th January
+ ----------------
+  #### What did we do today:
+  1. kahoot
+  1. Introduzing ypes of memory
+  
+  #### What did you learn:
+  
+ 
+ Reflection (12th day) - 22nd January
+ ----------------
+ 1. Presentations on Types of memory 
+ 1. Discussion on self-automatized jobs
+ 1. Reflection on Unit2
  
  
  
