@@ -1,4 +1,10 @@
-
+## Feedback
+Great job overall Lauricenia!. You can improve:
+1. You used references appropietely in your text, well done. Now use MLA format in the section References
+1. Criteria 6, although it is well bounded under usabiity, it is difficult to measure if your do not give specific quantifiers, for example: the user is able to discover the functions of the system in a single trial of the system, etc
+1. Great job with the flow diagrams! you have one small mistake with the for loops. Ask me next time in class :-)
+1. In the **Development Ssection** rather than putting the whole code, include only those portions that are new to you, programs that you specially developed and are linked to the success criteria. Also remember to justify why the code/image/table was included by writing a couple of sentenses indicating its purpose. Every table, code, figure needs its figure caption: Fig. 1, Table 1, Code 1, etc
+1. Good job identifying the types of testing in the **test plan**. Regarding the improvements for the future, it seems here you run out of time?, Next time try to identify where in the current solution you could make further improvements and why are those important. 
 
 # Unit_2_Project_Lauricenia
 This repository will be used to record the steps for creating the mars communication system program
